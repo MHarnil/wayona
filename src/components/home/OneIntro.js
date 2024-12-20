@@ -15,10 +15,10 @@ const OneIntro = () => {
                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography sx={{
                             fontFamily: '"Nunito", sans-serif', fontSize: '14px', textAlign: 'center', mb: 4, width: {
-                                xs: '100%',  // Full width on extra-small screens
-                                sm: '85%',   // 85% width on small screens and above
-                                md: '75%',   // 75% width on medium screens and above
-                                lg: '70%'    // 70% width on large screens and above
+                                xs: '100%',
+                                sm: '85%', 
+                                md: '75%', 
+                                lg: '70%'  
                             }
                         }}>
                             Discover the epitome of electric mobility with G-One EV Scooters! From sleek design to eco-friendly performance, these scooters redefine urban commuting. Join us as we delve into the cutting-edge features, unparalleled efficiency, and unmatched convenience of G-One EV Scooters. Embrace the future of transportation and elevate your ride today!

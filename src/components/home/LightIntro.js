@@ -15,10 +15,10 @@ const LightIntro = () => {
                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography sx={{
                             fontFamily: '"Nunito", sans-serif', fontSize: '14px', textAlign: 'center', mb:4, width: {
-                                xs: '100%',  // Full width on extra-small screens
-                                sm: '85%',   // 85% width on small screens and above
-                                md: '75%',   // 75% width on medium screens and above
-                                lg: '70%'    // 70% width on large screens and above
+                                xs: '100%',
+                                sm: '85%', 
+                                md: '75%', 
+                                lg: '70%'  
                             }
                         }}>
                             Embark on a journey towards sustainable urban exploration with G-Lite EV Scooters! Compact, efficient, and emission-free, these electric scooters are revolutionizing the way we navigate our cities. Say goodbye to traffic jams and parking woes as you glide effortlessly through the streets on these sleek and stylish rides. With zero emissions and whisper-quiet operation, G-Lite EV Scooters are not just a mode of transportation but a statement of eco-consciousness. Join the electric revolution and experience the freedom of emission-free commuting with G-Lite EV Scooters today!
