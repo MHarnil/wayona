@@ -22,8 +22,8 @@ const Header = () => {
             {/* Logo Section */}
             <Grid item xs={6} sm={3} md={2}>
               <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-              <Link href="/" color="inherit" underline="none">
-                <Typography component="img" src={Logo} sx={{ width: { xs: '90%', sm: '100%' }, maxWidth: '150px' }} />
+                <Link href="/" color="inherit" underline="none">
+                  <Typography component="img" src={Logo} sx={{ width: { xs: '90%', sm: '100%' }, maxWidth: '150px' }} />
                 </Link>
               </Box>
             </Grid>
@@ -32,18 +32,18 @@ const Header = () => {
             <Grid item xs={6} sm={9} md={10} sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
               {/* Menu links - Visible on larger screens */}
               <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/" color="inherit" underline="none">Home</Link>
                 </Typography>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/aboutus" color="inherit" underline="none">About Us</Link>
                 </Typography>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/ourproduct" color="inherit" underline="none">Our Products</Link>
                 </Typography>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Store Locator</Typography>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Blog</Typography>
-                <Typography sx={{ mx: 2,fontFamily: '"Nunito", sans-serif' ,fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Store Locator</Typography>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Blog</Typography>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/contactus" color="inherit" underline="none">Contact Us</Link>
                 </Typography>
               </Box>
@@ -82,12 +82,12 @@ const Header = () => {
         onClose={toggleMobileMenu}
       >
         <Box sx={{ width: 250, p: 2 }}>
-          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>Home</Typography>
-          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>About Us</Typography>
-          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>Our Products</Typography>
+          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}><Link href="/" color="inherit" underline="none">Home</Link></Typography>
+          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}><Link href="/aboutus" color="inherit" underline="none">About Us</Link></Typography>
+          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}><Link href="/ourproduct" color="inherit" underline="none">Our Products</Link></Typography>
           <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>Store Locator</Typography>
           <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>Blog</Typography>
-          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}>Contact Us</Typography>
+          <Typography sx={{ my: 2, cursor: 'pointer', '&:hover': { color: '#FB7C00' } }}><Link href="/contactus" color="inherit" underline="none">Contact Us</Link></Typography>
           <Box sx={{ display: 'flex', justifyContent: 'space-evenly', mt: 3 }}>
             <IconButton sx={{ color: '#000', border: '1px solid #000', transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00' } }}>
               <FacebookIcon fontSize="small" />
