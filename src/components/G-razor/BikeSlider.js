@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import Slider from 'react-slick';
+import { Box, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 import I1 from '../../assest/img/G-rozar/slider/Frame521.webp';
 import I2 from '../../assest/img/G-rozar/slider/Frame520.webp';
@@ -10,38 +11,90 @@ const cardData = [
 ];
 
 const BikeSlider = () => {
+    const theme = useTheme();
+    const isSmDown = useMediaQuery(theme.breakpoints.down('md')); 
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 600, 
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 960, 
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
+    };
+
+
     return (
-        <>
-            <Box>
+        <Box>
+            <Typography
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column', sm: 'row' },
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontFamily: '"Cardo", serif',
+                    fontSize: { xs: 20, sm: 22, md: 26, lg: 28 },
+                    fontWeight: 600,
+                    textAlign: 'center', mt: 5, mb: 2
+                }}
+            >
+                UNFORGETTABLE RIDE
                 <Typography
+                    variant="span"
                     sx={{
-                        display: 'flex',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        fontFamily: '"Cardo", serif',
-                        fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
+                        color: '#FB7C00',
+                        fontSize: { xs: 20, sm: 22, md: 26, lg: 28 },
                         fontWeight: 600,
-                        textAlign: 'center', mt: 5, mb: 2
+                        fontFamily: '"Cardo", serif',
+                        marginTop: { xs: '8px', sm: '0' }, ml: 2
                     }}
                 >
-                    Unforgettable Ride
-                    <Typography
-                        variant="span"
-                        sx={{
-                            color: '#FB7C00',
-                            fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
-                            fontWeight: 600,
-                            fontFamily: '"Cardo", serif',
-                            marginTop: { xs: '8px', sm: '0' }, ml: 1
-                        }}
-                    >
-                        Beyond Imagination!
-                    </Typography>
+                    BEYOND IMAGINATION!
                 </Typography>
+            </Typography>
+
+            {/* Show Carousel on Small Screens */}
+            {isSmDown && (
+                <Container>
+                    <Slider {...settings}>
+                        {cardData.map((card) => (
+                            <Box
+                                key={card.id}
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    height: 400,
+                                    backgroundImage: `url(${card.image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    borderRadius: '2px',
+                                    px: 2,
+                                }}
+                            />
+                        ))}
+                    </Slider>
+                </Container>
+            )}
+
+            {/* Show Static Slider on Larger Screens */}
+            {!isSmDown && (
                 <Box
                     sx={{
-                        // height: '100vh',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
@@ -84,9 +137,9 @@ const BikeSlider = () => {
                         ))}
                     </Box>
                 </Box>
-            </Box>
-        </>
+            )}
+        </Box>
     );
 };
 
-export default BikeSlider
+export default BikeSlider;
