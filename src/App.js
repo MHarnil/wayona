@@ -12,15 +12,15 @@ import ContactUs from './page/ContactUs';
 import Become from './components/Dealer/Become';
 
 const App = () => {
-  
+
   return (
     <>
       <Header />
-      {/* <Become/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/storelocator" element={<Dealer />} />
+        <Route path="/dealerlocator" element={<Dealer />} />
+        <Route path="/becomedealer" element={<Become />} />
         <Route path="/glite" element={<Glite />} />
         <Route path="/gone" element={<Gone />} />
         <Route path="/grazor" element={<Grazor />} />
