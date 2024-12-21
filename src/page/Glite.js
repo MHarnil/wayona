@@ -11,7 +11,7 @@ const Glite = () => {
     <>
      <ScooterDetails/> 
      <Features/>
-     {/* <BikeSlider/>  */}
+     <BikeSlider/> 
      <Headlight/>
      <Specification/> 
      <BookScooter/>
