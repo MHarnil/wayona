@@ -1,12 +1,8 @@
-import { Box, Button, Container, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Link, TextField, Typography } from '@mui/material';
 import React from 'react';
 
 import Logo from '../../assest/img/Footerlogo.webp';
 
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -25,13 +21,13 @@ const Footer = () => {
                             Product
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            G-ONE
+                            <Link href="/gone" color="inherit" underline="none">G-ONE</Link>
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            G-RAZOR
+                            <Link href="/grazor" color="inherit" underline="none"> G-RAZOR</Link>
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            G-LITE
+                            <Link href="/glite" color="inherit" underline="none">G-LITE</Link>
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
                             Astino...(Soon)
@@ -42,10 +38,10 @@ const Footer = () => {
                             Quick Links
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            Home
+                            <Link href="/" color="inherit" underline="none">Home</Link>
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            About Us
+                            <Link href="/aboutus" color="inherit" underline="none">About Us</Link>
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
                             Franchise
@@ -54,7 +50,7 @@ const Footer = () => {
                             Exp. Center
                         </Typography>
                         <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', lineHeight: '2.44', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
-                            Contact Us
+                            <Link href="/contactus" color="inherit" underline="none">Contact Us</Link>
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>

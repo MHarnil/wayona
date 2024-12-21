@@ -39,9 +39,10 @@ const Header = () => {
                   <Link href="/aboutus" color="inherit" underline="none">About Us</Link>
                 </Typography>
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
-                  <Link href="/ourproduct" color="inherit" underline="none">Our Products</Link>
+                  Our Products
                 </Typography>
-                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Store Locator</Typography>
+                <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
+                  <Link href="/storelocator" color="inherit" underline="none">Store Locator</Link></Typography>
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>Blog</Typography>
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/contactus" color="inherit" underline="none">Contact Us</Link>
