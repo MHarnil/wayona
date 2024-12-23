@@ -62,7 +62,7 @@ const Footer = () => {
                                 <PhoneIcon sx={{ color: '#FB7C00' }} />
                             </Box>
                             <Box>
-                                <Typography sx={{ ml: 1, color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
+                                <Typography sx={{ ml: 1, color: '#FFF', cursor: 'pointer', fontFamily: '"Nunito", sans-serif', fontSize: '16px', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
                                     +91 98791 82121
                                 </Typography>
                             </Box>
@@ -84,7 +84,7 @@ const Footer = () => {
                                 <MailIcon sx={{ color: '#FB7C00' }} />
                             </Box>
                             <Box>
-                                <Typography sx={{ ml: 1, color: '#FFF', fontFamily: '"Nunito", sans-serif', fontSize: '16px', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
+                                <Typography sx={{ ml: 1, color: '#FFF', cursor: 'pointer', fontFamily: '"Nunito", sans-serif', fontSize: '16px', '&:hover': { color: '#FB7C00', transition: '0.4s' } }}>
                                     info@wayonaaev.in
                                 </Typography>
                             </Box>
