@@ -2,7 +2,6 @@ import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -37,20 +36,7 @@ export default function Specification() {
     return (
         <Box sx={{ py: 4 }}>
             <Container maxWidth="md">
-                <Typography
-                    variant="h4"
-                    gutterBottom
-                    sx={{
-                        color: '#1E1E1E',
-                        my: 3,
-                        fontFamily: '"Cardo", serif',
-                        fontWeight: '700',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        fontSize: { xs: '1.5rem', sm: '2.5rem' },
-                        textAlign: { xs: 'center', sm: 'left' }
-                    }}
-                >
+                <Typography variant="h4" gutterBottom sx={{ color: '#1E1E1E', my: 3, fontFamily: '"Cardo", serif', fontWeight: '700', display: 'flex', justifyContent: 'center', fontSize: { xs: '1.5rem', sm: '2.5rem' }, textAlign: { xs: 'center', sm: 'left' } }} >
                     Specification
                 </Typography>
                 <Grid container spacing={2}>
@@ -62,17 +48,17 @@ export default function Specification() {
                                     aria-controls={`panel${index + 1}-content`}
                                     id={`panel${index + 1}-header`}
                                     sx={{
-                                        backgroundColor:'#E6E6E6',
+                                        backgroundColor: '#E6E6E6',
                                         borderBottom: '1px solidrgb(1, 1, 1)',
                                         '&:hover': { color: '#FB7C00' }
                                     }}
                                 >
-                                    <Typography variant="body1" sx={{ fontWeight: 600, fontSize: { xs: '14px', sm: '16px' },fontFamily: '"Nunito", sans-serif' }}>
+                                    <Typography variant="body1" sx={{ fontWeight: 600, fontSize: { xs: '14px', sm: '16px' }, fontFamily: '"Nunito", sans-serif' }}>
                                         {item.question}
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{ backgroundColor: '#fafafa' }}>
-                                    <Typography variant="body2" sx={{ color: '#1E1E1E', fontSize: { xs: '14px', sm: '16px' },fontFamily: '"Nunito", sans-serif' }}>
+                                    <Typography variant="body2" sx={{ color: '#1E1E1E', fontSize: { xs: '14px', sm: '16px' }, fontFamily: '"Nunito", sans-serif' }}>
                                         {item.answer}
                                     </Typography>
                                 </AccordionDetails>

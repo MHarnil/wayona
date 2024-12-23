@@ -12,24 +12,24 @@ const cardData = [
 
 const BikeSlider = () => {
     const theme = useTheme();
-    const isSmDown = useMediaQuery(theme.breakpoints.down('md')); 
+    const isSmDown = useMediaQuery(theme.breakpoints.down('md'));
 
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1, 
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         responsive: [
             {
-                breakpoint: 600, 
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                 },
             },
             {
-                breakpoint: 960, 
+                breakpoint: 960,
                 settings: {
                     slidesToShow: 2,
                 },
@@ -40,29 +40,9 @@ const BikeSlider = () => {
 
     return (
         <Box>
-            <Typography
-                sx={{
-                    display: 'flex',
-                    flexDirection: { xs: 'column', sm: 'row' },
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    fontFamily: '"Cardo", serif',
-                    fontSize: { xs: 20, sm: 22, md: 26, lg: 28 },
-                    fontWeight: 600,
-                    textAlign: 'center', mt: 5, mb: 2
-                }}
-            >
+            <Typography sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'center', alignItems: 'center', fontFamily: '"Cardo", serif', fontSize: { xs: 20, sm: 22, md: 26, lg: 28 }, fontWeight: 600, textAlign: 'center', mt: 5, mb: 2 }} >
                 UNFORGETTABLE RIDE
-                <Typography
-                    variant="span"
-                    sx={{
-                        color: '#FB7C00',
-                        fontSize: { xs: 20, sm: 22, md: 26, lg: 28 },
-                        fontWeight: 600,
-                        fontFamily: '"Cardo", serif',
-                        marginTop: { xs: '8px', sm: '0' }, ml: 2
-                    }}
-                >
+                <Typography variant="span" sx={{ color: '#FB7C00', fontSize: { xs: 20, sm: 22, md: 26, lg: 28 }, fontWeight: 600, fontFamily: '"Cardo", serif', marginTop: { xs: '8px', sm: '0' }, ml: 2 }} >
                     BEYOND IMAGINATION!
                 </Typography>
             </Typography>
@@ -93,22 +73,8 @@ const BikeSlider = () => {
 
             {/* Show Static Slider on Larger Screens */}
             {!isSmDown && (
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}
-                >
-                    <Box
-                        sx={{
-                            height: 380,
-                            display: 'flex',
-                            flexWrap: 'nowrap',
-                            justifyContent: 'start',
-                            position: 'relative',
-                        }}
-                    >
+                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
+                    <Box sx={{ height: 380, display: 'flex', flexWrap: 'nowrap', justifyContent: 'start', position: 'relative', }} >
                         {cardData.map((card) => (
                             <Box
                                 key={card.id}

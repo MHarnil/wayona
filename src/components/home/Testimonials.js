@@ -4,7 +4,6 @@ import { Box, Container, Typography } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Import your video assets
 import video1 from '../../assest/video/Video1.mp4';
 import video2 from '../../assest/video/Video2.mp4';
 import video3 from '../../assest/video/Video3.mp4';
@@ -54,54 +53,23 @@ const Testimonials = () => {
       <Container>
         <Box sx={{ width: "100%", textAlign: "center", mt: { xs: 3, sm: 5 } }}>
           {/* Title */}
-          <Typography
-            variant="h5"
-            sx={{
-              mb: 2,
-              fontWeight: "700",
-              fontSize: { xs: "28px", md: "40px", lg: "46px" },
-              fontFamily: "cardo",
-            }}
-          >
+          <Typography variant="h5" sx={{ mb: 2, fontWeight: "700", fontSize: { xs: "28px", md: "40px", lg: "46px" }, fontFamily: "cardo", }}>
             Testimonials
           </Typography>
 
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             {/* Subtitle */}
-            <Typography
-              variant="h6"
-              sx={{
-                mb: { xs: 3, sm: 4 },
-                fontWeight: "500",
-                fontSize: { xs: "13px", md: "20px", lg: "19px" },
-                fontFamily: "nunito",
-                width: { xs: "100%", sm: "80%", md: "70%", lg: "60%" },
-              }}
-            >
+            <Typography variant="h6" sx={{ mb: { xs: 3, sm: 4 }, fontWeight: "500", fontSize: { xs: "13px", md: "20px", lg: "19px" }, fontFamily: "nunito", width: { xs: "100%", sm: "80%", md: "70%", lg: "60%" }, }} >
               Wayonaa Ev Fastest-Growing Company Shaping the Future of Electric
               Vehicles Here's Customers Feedback
             </Typography>
           </Box>
 
           {/* Video Slider */}
-          <Box
-            className="slider-container"
-            sx={{ mx: "auto", maxWidth: { xs: "100%", sm: "90%" } }}
-          >
+          <Box className="slider-container" sx={{ mx: "auto", maxWidth: { xs: "100%", sm: "90%" } }}  >
             <Slider {...settings}>
               {videos.map((video, index) => (
-                <Box
-                  key={index}
-                  sx={{
-                    position: "relative",
-                    borderRadius: "7px",
-                    overflow: "hidden",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                    transform: "scale(0.85)",
-                    transition: "transform 0.5s ease",
-                  }}
-                  className="video-slide"
-                >
+                <Box key={index} sx={{ position: "relative", borderRadius: "7px", overflow: "hidden", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", transform: "scale(0.85)", transition: "transform 0.5s ease", }} className="video-slide"  >
                   <Box
                     component="video"
                     src={video}

@@ -4,7 +4,7 @@ import { Person, Email, Phone, Chat } from "@mui/icons-material";
 
 const ConFill = () => {
     return (
-        <Box sx={{ flexGrow: 1, padding: 4 , my:10 }}>
+        <Box sx={{ flexGrow: 1, padding: 4, my: 10 }}>
             <Grid container spacing={2} justifyContent="center">
                 <Grid item xs={10} sm={5}>
                     <Typography variant="h4" gutterBottom sx={{ fontFamily: "Cardo", fontWeight: 600 }}>
@@ -15,17 +15,9 @@ const ConFill = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <Box
-                        sx={{
-                            maxWidth: 500,
-                            margin: "0 auto",
-                            padding: 3,
-                            border:'1px solid #66626180',
-                            borderRadius: 2,
-                        }}
-                    >
+                    <Box sx={{ maxWidth: 500, margin: "0 auto", padding: 3, border: '1px solid #66626180', borderRadius: 2, }}  >
                         <form>
-                            <TextField sx={{color:'#1E1E1E', fontSize:12}}
+                            <TextField sx={{ color: '#1E1E1E', fontSize: 12 }}
                                 fullWidth
                                 label="Full Name"
                                 variant="outlined"
@@ -39,7 +31,7 @@ const ConFill = () => {
                                 }}
                             />
 
-                            <TextField sx={{color:'#1E1E1E', fontSize:12}}
+                            <TextField sx={{ color: '#1E1E1E', fontSize: 12 }}
                                 fullWidth
                                 label="E-mail Address"
                                 type="email"
@@ -54,7 +46,7 @@ const ConFill = () => {
                                 }}
                             />
 
-                            <TextField sx={{color:'#1E1E1E', fontSize:12}}
+                            <TextField sx={{ color: '#1E1E1E', fontSize: 12 }}
                                 fullWidth
                                 label="Phone Number"
                                 type="tel"
@@ -69,7 +61,7 @@ const ConFill = () => {
                                 }}
                             />
 
-                            <TextField sx={{color:'#1E1E1E', fontSize:12}}
+                            <TextField sx={{ color: '#1E1E1E', fontSize: 12 }}
                                 fullWidth
                                 label="Write Your Message"
                                 variant="outlined"
@@ -87,7 +79,7 @@ const ConFill = () => {
                             <Box sx={{ textAlign: 'center' }}>
                                 <Button
                                     variant="contained"
-                                    sx={{ mt: 2, py: 1, px: 5, backgroundColor:'#FB7C00' }}
+                                    sx={{ mt: 2, py: 1, px: 5, backgroundColor: '#FB7C00' }}
                                 >
                                     SUBMIT
                                 </Button>

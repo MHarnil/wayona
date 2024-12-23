@@ -8,7 +8,7 @@ import I4 from '../../assest/img/Headlight/SvgjsG1029.webp';
 
 const Headlight = () => {
   return (
-    <Box sx={{ backgroundColor: '#CFCFCF', py: 1, textAlign: 'center', my:3 }}>
+    <Box sx={{ backgroundColor: '#CFCFCF', py: 1, textAlign: 'center', my: 3 }}>
       <Container>
         <Grid container spacing={2}>
           {/* First Item */}

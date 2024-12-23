@@ -12,7 +12,7 @@ const Gone = () => {
             <ScooterDetails />
             <Features />
             <BikeSlider />
-            <Headlight/>
+            <Headlight />
             <Specification />
             <BookScooter />
         </>

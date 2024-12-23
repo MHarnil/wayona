@@ -6,7 +6,7 @@ const Dealer = () => {
     return (
         <>
             <Find />
-            <BookScooter/>
+            <BookScooter />
         </>
     )
 }

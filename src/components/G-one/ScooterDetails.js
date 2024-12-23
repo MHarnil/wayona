@@ -47,7 +47,7 @@ const ScooterDetails = () => {
   const [maxRange, setMaxRange] = useState(0);
   const [motorPower, setMotorPower] = useState(0);
 
-  
+
   const countdown = (target, setter) => {
     let count = 0;
     const interval = setInterval(() => {
@@ -55,26 +55,20 @@ const ScooterDetails = () => {
         count += 1;
         setter(count);
       } else {
-        clearInterval(interval); 
+        clearInterval(interval);
       }
-    }, 50); 
+    }, 50);
   };
 
   useEffect(() => {
-    countdown(75, setMaxSpeed); 
-    countdown(75, setMaxRange); 
-    countdown(1000, setMotorPower); 
+    countdown(75, setMaxSpeed);
+    countdown(75, setMaxRange);
+    countdown(1000, setMotorPower);
   }, []);
 
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          backgroundColor: "#FFFFFF",
-          py: 4,
-          px: 2,
-        }}
-      >
+      <Box sx={{ backgroundColor: "#FFFFFF", py: 4, px: 2, }} >
 
         {/* Header Section */}
         <Grid container spacing={2} alignItems="center" justifyContent="center">
@@ -103,29 +97,14 @@ const ScooterDetails = () => {
         <Grid container spacing={4} sx={{ mt: 0 }}>
           {/* Specifications */}
           <Grid item xs={12} sm={12} md={3}>
-            <Box
-              sx={{
-                p: 3,
-                backgroundColor: "#F5F5F5",
-                borderRadius: 2,
-                textAlign: "center",
-              }}
-            >
+            <Box sx={{ p: 3, backgroundColor: "#F5F5F5", borderRadius: 2, textAlign: "center", }} >
               <Stack spacing={4}>
-              {["MAX SPEED", "MAX RANGE", "MOTOR POWER"].map((label, index) => (
+                {["MAX SPEED", "MAX RANGE", "MOTOR POWER"].map((label, index) => (
                   <Box key={index}>
-                    <Typography
-                      variant="body2"
-                      color="#1E1E1E"
-                      sx={{ fontFamily: '"Nunito", sans-serif' }}
-                    >
+                    <Typography variant="body2" color="#1E1E1E" sx={{ fontFamily: '"Nunito", sans-serif' }} >
                       {label}
                     </Typography>
-                    <Typography
-                      variant="h4"
-                      fontWeight="bold"
-                      sx={{ fontFamily: '"Nunito", sans-serif' }}
-                    >
+                    <Typography variant="h4" fontWeight="bold" sx={{ fontFamily: '"Nunito", sans-serif' }} >
                       0 {label === "MOTOR POWER" ? "W" : "Km"}
                     </Typography>
                   </Box>
@@ -136,12 +115,7 @@ const ScooterDetails = () => {
 
           {/* Scooter Images */}
           <Grid item xs={12} sm={12} md={7}>
-            <Box
-              display="flex"
-              justifyContent="center"
-              flexDirection={{ xs: "column", sm: "row" }}
-              gap={2}
-            >
+            <Box display="flex" justifyContent="center" flexDirection={{ xs: "column", sm: "row" }} gap={2}  >
               <img
                 src={getScooterImages().front}
                 alt="Front View"
@@ -167,19 +141,7 @@ const ScooterDetails = () => {
 
           {/* Color Selector */}
           <Grid item xs={12} sm={12} md={2}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "row", md: "column" }, 
-                justifyContent: "center",
-                alignItems: "center",
-                gap: 2,
-                backgroundColor: "#F5F5F5",
-                borderRadius: 50,
-                py: 3,
-                mx: { xs: 0, md: 5 },
-              }}
-            >
+            <Box sx={{ display: "flex", flexDirection: { xs: "row", md: "column" }, justifyContent: "center", alignItems: "center", gap: 2, backgroundColor: "#F5F5F5", borderRadius: 50, py: 3, mx: { xs: 0, md: 5 }, }}  >
               {colorOptions.map((color) => (
                 <IconButton
                   key={color.name}
@@ -190,7 +152,7 @@ const ScooterDetails = () => {
                     borderRadius: "50%",
                     backgroundColor: color.color,
                     border: selectedColor === color.name ? "2px solid black" : "none",
-                    transition: "all 0.3s ease", 
+                    transition: "all 0.3s ease",
                   }}
                 />
               ))}

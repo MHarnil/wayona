@@ -16,19 +16,19 @@ import BikeAbout from '../components/home/BikeAbot'
 const Home = () => {
   return (
     <>
-     <Slider/>
-     <Saveing />
-     <Video/>
-     <GLitePage/>
-     <LightIntro /> 
-     <GOnePage/>
-     <OneIntro/>
-     <GRazorPage/>
-     <RazorIntro/>
-     <BikeAbout/>
-     <Testimonials/>
-     <Verified/>
-     <Faq/>
+      <Slider />
+      <Saveing />
+      <Video />
+      <GLitePage />
+      <LightIntro />
+      <GOnePage />
+      <OneIntro />
+      <GRazorPage />
+      <RazorIntro />
+      <BikeAbout />
+      <Testimonials />
+      <Verified />
+      <Faq />
     </>
   )
 }

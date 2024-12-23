@@ -11,37 +11,14 @@ const Saveing = () => {
     const annualSavings = (monthlySavings * 12).toFixed(0);
     return (
         <>
-            <Box sx={{
-                backgroundColor: "#f9f9f9",
-                py: 3
-            }}>
+            <Box sx={{ backgroundColor: "#f9f9f9", py: 3 }}>
                 <Container>
-                    <Typography sx={{
-                        fontFamily: '"Nunito", sans-serif',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        textAlign: { xs: 'center', sm: 'left' },
-                        fontSize: { xs: '18px', sm: '22px', md: '28px' },
-                        fontWeight: 800,
-                        mt: 2,
-                    }}>
+                    <Typography sx={{ fontFamily: '"Nunito", sans-serif', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { xs: 'column', sm: 'row' }, textAlign: { xs: 'center', sm: 'left' }, fontSize: { xs: '18px', sm: '22px', md: '28px' }, fontWeight: 800, mt: 2, }}>
                         <Typography variant='span' sx={{ color: '#FB7C00', mx: 1, }}>Savings meter</Typography>compared to<Typography variant='span' sx={{ color: '#FB7C00', mx: 1, }}>petrol</Typography> @100/litre
                     </Typography>
 
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            my: 5
-                        }}
-                    >
-                        <Grid
-                            container
-                            spacing={2}
-                        >
+                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", my: 5 }}  >
+                        <Grid container spacing={2}  >
                             {/* Daily Travel Section */}
                             <Grid item xs={12} sm={6} md={4}>
                                 <Box sx={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: 4, p: 2, borderLeft: '6px solid #FB7C00', pl: 2 }}>
@@ -112,16 +89,7 @@ const Saveing = () => {
 
                             {/* Savings Section */}
                             <Grid item xs={12} sm={6} md={4}>
-                                <Box
-                                    sx={{
-                                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                                        borderRadius: 4,
-                                        p: 3,
-                                        textAlign: "center",
-                                        display: 'flex',
-                                        justifyContent: 'space-evenly', borderLeft: '6px solid #FB7C00', pl: 2
-                                    }}
-                                >
+                                <Box sx={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: 4, p: 3, textAlign: "center", display: 'flex', justifyContent: 'space-evenly', borderLeft: '6px solid #FB7C00', pl: 2 }} >
                                     <Box>
                                         <Typography variant="body1" fontWeight="bold" sx={{ fontFamily: '"Nunito", sans-serif' }}>
                                             Monthly Savings

@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-    Box,
-    Typography,
-    Grid,
-    Avatar,
-    Card,
-    CardContent,
-    Rating,
-    Container,
-} from '@mui/material';
+import { Box, Typography, Grid, Avatar, Card, CardContent, Rating, Container, } from '@mui/material';
 import Google from '../../assest/img/home/Google.webp'
 import Googl from '../../assest/img/home/Googl.webp'
 import Avtar from '../../assest/img/home/Avtar.webp'
@@ -45,38 +36,20 @@ const Verified = () => {
         <>
             <Container>
                 <Box sx={{ flexGrow: 1, p: 2 }}>
-                    <Box sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        my: 3,
-                        flexDirection: { xs: 'column', sm: 'row' }
-                    }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', my: 3, flexDirection: { xs: 'column', sm: 'row' } }}>
                         <Typography
                             component="img"
                             src={Googl}
                             sx={{
-                                width: { xs: '80px', sm: '110px' }, 
-                                mr: { sm: 1 },  
-                                mb: { xs: 2, sm: 0 } 
+                                width: { xs: '80px', sm: '110px' },
+                                mr: { sm: 1 },
+                                mb: { xs: 2, sm: 0 }
                             }}
                         />
-                        <Typography
-                            variant="h4"
-                            gutterBottom
-                            sx={{
-                                color: '#1E1E1E',
-                                m: 0,
-                                fontFamily: '"Cardo", serif',
-                                fontWeight: '700',
-                                fontSize: { xs: '1.5rem', sm: '2rem' },
-                                textAlign: { xs: 'center', sm: 'left' }
-                            }}
-                        >
+                        <Typography variant="h4" gutterBottom sx={{ color: '#1E1E1E', m: 0, fontFamily: '"Cardo", serif', fontWeight: '700', fontSize: { xs: '1.5rem', sm: '2rem' }, textAlign: { xs: 'center', sm: 'left' } }} >
                             Verified Reviews
                         </Typography>
                     </Box>
-
 
                     <Grid container spacing={3}>
                         {reviews.map((review, index) => (

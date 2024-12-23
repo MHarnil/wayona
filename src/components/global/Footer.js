@@ -103,42 +103,17 @@ const Footer = () => {
                                 borderRadius: '4px',
                             }}
                         />
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            sx={{
-                                width: '100%',
-                                backgroundColor: '#FB7C00',
-                                my: 2,
-                                '&:hover': {
-                                    backgroundColor: '#FF4B3A',
-                                },
-                            }}
-                        >
+                        <Button variant="contained" color="primary" sx={{ width: '100%', backgroundColor: '#FB7C00', my: 2, '&:hover': { backgroundColor: '#FF4B3A', }, }} >
                             Subscribe
                         </Button>
                         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            {/* <FacebookIcon sx={{ color: '#FFF', mx: 1 }} />
-                            <InstagramIcon sx={{ color: '#FFF', mx: 1 }} />
-                            <YouTubeIcon sx={{ color: '#FFF', mx: 1 }} />
-                            <LinkedInIcon sx={{ color: '#FFF', mx: 1 }} /> */}
                             <SocialMedia />
                         </Box>
                     </Grid>
                 </Grid>
 
                 <Box sx={{ pt: 4, borderTop: '1px solid #354342' }}>
-                    <Typography sx={{
-                        color: '#FFF',
-                        fontFamily: '"Nunito", sans-serif',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        textAlign: { xs: 'center', sm: 'left' },
-                        fontSize: { xs: '14px', sm: '16px', md: '18px' },
-
-                    }}>
+                    <Typography sx={{ color: '#FFF', fontFamily: '"Nunito", sans-serif', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { xs: 'column', sm: 'row' }, textAlign: { xs: 'center', sm: 'left' }, fontSize: { xs: '14px', sm: '16px', md: '18px' } }}>
                         © Copyright@2024 <Typography variant='span' sx={{ color: '#FB7C00', mx: 1, }}> WAYONAA EV, </Typography> ALL Rights Reserved
                     </Typography>
                 </Box>

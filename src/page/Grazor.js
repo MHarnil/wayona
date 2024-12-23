@@ -12,7 +12,7 @@ const Grazor = () => {
             <ScooterDetails />
             <Features />
             <BikeSlider />
-            <Headlight/>
+            <Headlight />
             <Specification />
             <BookScooter />
         </>

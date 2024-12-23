@@ -55,13 +55,7 @@ const ScooterDetails = () => {
 
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          backgroundColor: "#FFFFFF",
-          py: 4,
-          px: 2,
-        }}
-      >
+      <Box sx={{ backgroundColor: "#FFFFFF", py: 4, px: 2, }}>
 
         {/* Header Section */}
         <Grid container spacing={2} alignItems="center" justifyContent="center">
@@ -90,14 +84,7 @@ const ScooterDetails = () => {
         <Grid container spacing={4} sx={{ mt: 0 }}>
           {/* Specifications */}
           <Grid item xs={12} sm={12} md={3}>
-            <Box
-              sx={{
-                p: 3,
-                backgroundColor: "#F5F5F5",
-                borderRadius: 2,
-                textAlign: "center",
-              }}
-            >
+            <Box sx={{ p: 3, backgroundColor: "#F5F5F5", borderRadius: 2, textAlign: "center", }} >
               <Stack spacing={4}>
                 {["MAX SPEED", "MAX RANGE", "MOTOR POWER"].map((label, index) => (
                   <Box key={index}>
@@ -115,12 +102,7 @@ const ScooterDetails = () => {
 
           {/* Scooter Images */}
           <Grid item xs={12} sm={12} md={7}>
-            <Box
-              display="flex"
-              justifyContent="center"
-              flexDirection={{ xs: "column", sm: "row" }}
-              gap={2}
-            >
+            <Box display="flex" justifyContent="center" flexDirection={{ xs: "column", sm: "row" }} gap={2} >
               <img
                 src={getScooterImages().front}
                 alt="Front View"
@@ -146,19 +128,7 @@ const ScooterDetails = () => {
 
           {/* Color Selector */}
           <Grid item xs={12} sm={12} md={2}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "row", md: "column" },
-                justifyContent: "center",
-                alignItems: "center",
-                gap: 2,
-                backgroundColor: "#F5F5F5",
-                borderRadius: 50,
-                py: 3,
-                mx: { xs: 0, md: 5 },
-              }}
-            >
+            <Box sx={{ display: "flex", flexDirection: { xs: "row", md: "column" }, justifyContent: "center", alignItems: "center", gap: 2, backgroundColor: "#F5F5F5", borderRadius: 50, py: 3, mx: { xs: 0, md: 5 }, }} >
               {colorOptions.map((color) => (
                 <IconButton
                   key={color.name}

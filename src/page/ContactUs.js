@@ -5,8 +5,8 @@ import ConFill from '../components/ContactUs/ConFill'
 const ContactUs = () => {
   return (
     <>
-      <Contact/>
-      <ConFill/>
+      <Contact />
+      <ConFill />
     </>
   )
 }

@@ -12,15 +12,7 @@ function Leadership() {
     return (
         <>
             <Container>
-                <Typography
-                    variant="h5"
-                    sx={{
-                        my: 2,
-                        fontWeight: "700",
-                        fontSize: { xs: "28px", md: "40px", lg: "46px" },
-                        fontFamily: "cardo", display: 'flex', justifyContent: 'center', textAlign: 'center'
-                    }}
-                >
+                <Typography variant="h5" sx={{ my: 2, fontWeight: "700", fontSize: { xs: "28px", md: "40px", lg: "46px" }, fontFamily: "cardo", display: 'flex', justifyContent: 'center', textAlign: 'center' }} >
                     Our Leadership
                 </Typography>
                 <Box>
@@ -33,8 +25,8 @@ function Leadership() {
                                         src={Leader}
                                         alt="Leadership Image"
                                         style={{
-                                            width: '100%', // Ensures the image fits the container width
-                                            height: 'auto', // Maintains aspect ratio
+                                            width: '100%',
+                                            height: 'auto',
                                             borderRadius: '7px',
                                         }}
                                     />

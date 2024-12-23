@@ -8,11 +8,11 @@ import Leadership from '../components/AboutUs/Leadership'
 const AboutUs = () => {
   return (
     <>
-      <AboutIntro/>
-      <WeAre/>
-      <Leadership/>
-      <MeetTeam/>
-      <Journey/>
+      <AboutIntro />
+      <WeAre />
+      <Leadership />
+      <MeetTeam />
+      <Journey />
     </>
   )
 }

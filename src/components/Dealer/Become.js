@@ -6,7 +6,7 @@ import { Email, Person, Phone } from '@mui/icons-material';
 const Become = () => {
     const [areaAvailable, setAreaAvailable] = useState('');
     const [investment, setInvestment] = useState('');
-    const [step, setStep] = useState(1); // 1 for the first step, 2 for the second step
+    const [step, setStep] = useState(1);
 
     const handleAreaChange = (event) => {
         setAreaAvailable(event.target.value);
@@ -17,18 +17,13 @@ const Become = () => {
     };
 
     const handleNextClick = () => {
-        setStep(2); // Move to step 2
+        setStep(2);
     };
 
     return (
         <Container>
             <Box sx={{ flexGrow: 1, p: 2 }}>
-                <Typography
-                    variant="h4"
-                    textAlign="center"
-                    gutterBottom
-                    sx={{ fontWeight: 600, fontFamily: "Cardo", my: 4 }}
-                >
+                <Typography variant="h4" textAlign="center" gutterBottom sx={{ fontWeight: 600, fontFamily: "Cardo", my: 4 }}>
                     Become a Dealer
                 </Typography>
 
@@ -36,15 +31,7 @@ const Become = () => {
                 {step === 1 && (
                     <Grid container spacing={2} sx={{ display: { lg: "flex", md: "flex", sm: "flex", xs: "block" } }}>
                         <Grid item xs={12} md={6}>
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    gap: 2,
-                                    maxWidth: 400,
-                                    mx: 'auto',
-                                }}
-                            >
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 400, mx: 'auto', }} >
                                 <form>
                                     <TextField
                                         fullWidth
@@ -109,14 +96,7 @@ const Become = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    height: '100%',
-                                }}
-                            >
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', }} >
                                 <Box
                                     component="img"
                                     src={Bike}
@@ -134,16 +114,7 @@ const Become = () => {
                 {step === 2 && (
                     <Grid container spacing={2} sx={{ display: { lg: "flex", md: "flex", sm: "flex", xs: "block" } }}>
                         <Grid item xs={12} md={6}>
-                            <Box
-                                component="form"
-                                sx={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    gap: 2,
-                                    maxWidth: 400,
-                                    mx: 'auto',
-                                }}
-                            >
+                            <Box component="form" sx={{ display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 400, mx: 'auto', }}  >
                                 <FormControl fullWidth>
                                     <Select
                                         value={areaAvailable}
@@ -183,14 +154,7 @@ const Become = () => {
                         </Grid>
 
                         <Grid item xs={12} md={6}>
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    height: '100%',
-                                }}
-                            >
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', }}  >
                                 <Box
                                     component="img"
                                     src={Bike}

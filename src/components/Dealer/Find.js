@@ -11,21 +11,13 @@ function Find() {
     return (
         <>
             <Container>
-                <Typography
-                    variant="h5"
-                    sx={{
-                        my: 4,
-                        fontWeight: "700",
-                        fontSize: { xs: "28px", md: "40px", lg: "46px" },
-                        fontFamily: "cardo", display: 'flex', justifyContent: 'center', textAlign: 'center'
-                    }}
-                >
+                <Typography variant="h5" sx={{ my: 4, fontWeight: "700", fontSize: { xs: "28px", md: "40px", lg: "46px" }, fontFamily: "cardo", display: 'flex', justifyContent: 'center', textAlign: 'center' }} >
                     Find dealers around you!
                 </Typography>
                 <Box>
                     <Grid container spacing={2} sx={{ justifyContent: "space-between", display: "flex" }}>
                         {/* Left Side (Dealer Information and Search Bar) */}
-                        <Grid item xs={12} sm={12} md={5} sx={{ backgroundColor: "#F5F5F5", borderRadius: 3, py:2 }}>
+                        <Grid item xs={12} sm={12} md={5} sx={{ backgroundColor: "#F5F5F5", borderRadius: 3, py: 2 }}>
                             <Box sx={{ position: "relative" }}>
                                 <Typography>
                                     <input

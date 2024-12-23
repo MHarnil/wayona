@@ -9,12 +9,12 @@ import Headlight from '../components/global/Headlight'
 const Glite = () => {
   return (
     <>
-     <ScooterDetails/> 
-     <Features/>
-     <BikeSlider/> 
-     <Headlight/>
-     <Specification/> 
-     <BookScooter/>
+      <ScooterDetails />
+      <Features />
+      <BikeSlider />
+      <Headlight />
+      <Specification />
+      <BookScooter />
     </>
   )
 }

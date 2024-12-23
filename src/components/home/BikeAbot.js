@@ -13,20 +13,9 @@ import Right from '../../assest/img/home/Right.webp'
 function BikeAbout() {
     return (
         <>
-            <Container sx={{ py: 5 }}> {/* Added padding for top and bottom spacing */}
+            <Container sx={{ py: 5 }}>
                 <Box sx={{ textAlign: 'center' }}>
-                    <Typography
-                        sx={{
-                            display: 'flex',
-                            flexDirection: { xs: 'column', sm: 'row' },
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            fontFamily: '"Cardo", serif',
-                            fontSize: { xs: 24, sm: 28, md: 32, lg: 36 },
-                            fontWeight: 600,
-                            textAlign: 'center',
-                        }}
-                    >
+                    <Typography sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'center', alignItems: 'center', fontFamily: '"Cardo", serif', fontSize: { xs: 24, sm: 28, md: 32, lg: 36 }, fontWeight: 600, textAlign: 'center', }}>
                         Are you ready to make the switch to
                         <Typography
                             variant="span"
@@ -43,23 +32,13 @@ function BikeAbout() {
                     </Typography>
 
                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Typography
-                            variant="h6"
-                            sx={{
-                                mb: { xs: 3, sm: 4 },
-                                fontWeight: "500",
-                                fontSize: { xs: "12px", md: "14px", lg: "15px" },
-                                fontFamily: "nunito",
-                                width: { xs: "100%", sm: "80%", md: "70%", lg: "60%" },
-                            }}
-                        >
+                        <Typography variant="h6" sx={{ mb: { xs: 3, sm: 4 }, fontWeight: "500", fontSize: { xs: "12px", md: "14px", lg: "15px" }, fontFamily: "nunito", width: { xs: "100%", sm: "80%", md: "70%", lg: "60%" }, }} >
                             Experience our affordable and stylish Model-G scooters with eco-friendly features, intuitive controls, customization options for a comfortable and reliable ride.
                         </Typography>
                     </Box>
                 </Box>
                 <Box>
                     <Grid container spacing={4} sx={{ justifyContent: "center", display: "flex" }}>
-
                         {/* Bike 1 */}
                         <Grid item xs={12} md={4} sm={6} lg={4}>
                             <Box sx={{ borderRadius: "10px", overflow: "hidden", position: "relative" }}>
@@ -291,44 +270,44 @@ function BikeAbout() {
                                     </Box>
                                     {/* Explore More Button */}
                                     <Link href="/glite" color="inherit" underline="none">
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                            color: "#1E1C4E",
-                                            border: "1px solid #E6E6E6",
-                                            borderRadius: "5px",
-                                            padding: "10px",
-                                            marginTop: "15px",
-                                            "&:hover": {
-                                                color: "#FB7C00",
-                                                borderColor: "#FB7C00",
-                                            },
-                                        }}
-                                    >
-                                        <Typography
+                                        <Box
                                             sx={{
-                                                fontWeight: 700,
-                                                fontSize: "15px",
-                                                fontFamily: '"Nunito", sans-serif',
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                                color: "#1E1C4E",
+                                                border: "1px solid #E6E6E6",
+                                                borderRadius: "5px",
+                                                padding: "10px",
+                                                marginTop: "15px",
                                                 "&:hover": {
                                                     color: "#FB7C00",
+                                                    borderColor: "#FB7C00",
                                                 },
                                             }}
                                         >
-                                            EXPLORE MORE
-                                        </Typography>
-                                        <EastIcon
-                                            sx={{
-                                                fontSize: "15px",
-                                                ml: 1,
-                                                "&:hover": {
-                                                    color: "#FB7C00",
-                                                },
-                                            }}
-                                        />
-                                    </Box>
+                                            <Typography
+                                                sx={{
+                                                    fontWeight: 700,
+                                                    fontSize: "15px",
+                                                    fontFamily: '"Nunito", sans-serif',
+                                                    "&:hover": {
+                                                        color: "#FB7C00",
+                                                    },
+                                                }}
+                                            >
+                                                EXPLORE MORE
+                                            </Typography>
+                                            <EastIcon
+                                                sx={{
+                                                    fontSize: "15px",
+                                                    ml: 1,
+                                                    "&:hover": {
+                                                        color: "#FB7C00",
+                                                    },
+                                                }}
+                                            />
+                                        </Box>
                                     </Link>
                                 </Box>
                             </Box>

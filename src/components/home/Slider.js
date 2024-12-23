@@ -86,15 +86,7 @@ const CarouselComponent = () => {
     const images = [Slider1, Slider2, Slider3];
 
     return (
-        <Box
-            sx={{
-                width: "100%",
-                maxWidth: "100%",
-                margin: "auto",
-                overflow: "hidden",
-                position: "relative",
-            }}
-        >
+        <Box sx={{ width: "100%", maxWidth: "100%", margin: "auto", overflow: "hidden", position: "relative", }} >
             <Slider {...sliderSettings}>
                 {images.map((image, index) => (
                     <Box key={index} sx={{ position: "relative" }}>

@@ -2,7 +2,6 @@ import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -37,20 +36,7 @@ export default function Faq() {
     return (
         <Box sx={{ backgroundColor: '#f9f9f9', py: 4 }}>
             <Container maxWidth="md">
-                <Typography
-                    variant="h4"
-                    gutterBottom
-                    sx={{
-                        color: '#1E1E1E',
-                        my: 3,
-                        fontFamily: '"Cardo", serif',
-                        fontWeight: '700',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        fontSize: { xs: '1.5rem', sm: '2.5rem' },
-                        textAlign: { xs: 'center', sm: 'left' }
-                    }}
-                >
+                <Typography variant="h4" gutterBottom sx={{ color: '#1E1E1E', my: 3, fontFamily: '"Cardo", serif', fontWeight: '700', display: 'flex', justifyContent: 'center', fontSize: { xs: '1.5rem', sm: '2.5rem' }, textAlign: { xs: 'center', sm: 'left' } }}  >
                     Frequently Asked Questions
                 </Typography>
                 <Grid container spacing={2}>
