@@ -149,7 +149,7 @@ const Header = () => {
                   </Box>
                   <Box>
                     <Typography sx={{ fontFamily: '"Nunito", sans-serif', fontWeight: '700', fontSize: { xs: '16px', md: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' }, textAlign: { xs: 'start', md: 'left' }, }}>
-                      Astino
+                      Astino Coming Soon!!
                       <Typography sx={{ color: '#B4B4B4', fontFamily: '"Nunito", sans-serif', fontWeight: '700', fontSize: { xs: '14px', md: '16px' }, }}>
                         Award winning. Extra ordinary. Unbeatable. Best-in-class.
                       </Typography>
