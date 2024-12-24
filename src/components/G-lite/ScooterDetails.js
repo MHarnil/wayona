@@ -69,7 +69,7 @@ const ScooterDetails = () => {
   useEffect(() => {
     countdown(75, setMaxSpeed);
     countdown(75, setMaxRange);
-    countdown(1000, setMotorPower);
+    countdown(100, setMotorPower);
   }, []);
 
   return (
@@ -113,15 +113,11 @@ const ScooterDetails = () => {
               <Stack spacing={4}>
                 {["MAX SPEED", "MAX RANGE", "MOTOR POWER"].map((label, index) => (
                   <Box key={index}>
-                    <Typography variant="body2" color="#1E1E1E" sx={{ fontFamily: '"Nunito", sans-serif' }} >
+                    <Typography variant="body2" color="#1E1E1E" sx={{ fontFamily: '"Nunito", sans-serif' }}>
                       {label}
                     </Typography>
-                    <Typography
-                      variant="h4"
-                      fontWeight="bold"
-                      sx={{ fontFamily: '"Nunito", sans-serif' }}
-                    >
-                      0 {label === "MOTOR POWER" ? "W" : "Km"}
+                    <Typography variant="h4" fontWeight="bold" sx={{ fontFamily: '"Nunito", sans-serif' }}>
+                      {index === 2 ? `${motorPower} W` : `${index === 1 ? maxRange : maxSpeed} Km`}
                     </Typography>
                   </Box>
                 ))}

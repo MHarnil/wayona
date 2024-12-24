@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import Lite from '../../assest/img/home/LiteBike.webp';
 
-import LiteCon from '../../assest/img/home/LiteCon.webp';
+// import LiteCon from '../../assest/img/home/LiteCon.webp';
 
-// import Ico1 from '../../assest/img/home/I1.webp'
-// import Ico2 from '../../assest/img/home/I2.webp'
-// import Ico3 from '../../assest/img/home/I3.webp'
+import Ico1 from '../../assest/img/home/I1.webp'
+import Ico2 from '../../assest/img/home/I2.webp'
+import Ico3 from '../../assest/img/home/I3.webp'
 import CountUp from "react-countup";
 
 const GLitePage = () => {
@@ -39,8 +39,8 @@ const GLitePage = () => {
                 </Grid>
 
                 {/* Right Side: Specifications */}
-                {/* <Grid item xs={12} sm={3} textAlign="center" sx={{
-                    backgroundColor: '#E5E5E5', py: 4, display: 'flex', justifyContent: 'center', alignItems: 'center', aspectRatio: "1.5", // Aspect ratio 1.5
+                <Grid item xs={12} sm={3} textAlign="center" sx={{
+                    backgroundColor: '#E5E5E5', py: 4, display: 'flex', justifyContent: 'center', alignItems: 'center', aspectRatio: "1.5",
                     background: `
           radial-gradient(circle 220px at left, #0000 100%, #E5E5E5) left`,
                     backgroundSize: "100%",
@@ -85,20 +85,9 @@ const GLitePage = () => {
                         </Box>
                     </Box>
 
-                </Grid> */}
-                <Grid item xs={12} sm={3} textAlign="end">
-                    <Typography
-                        component="img"
-                        src={LiteCon}
-                        sx={{
-                            maxWidth: "100%",
-                            height: "auto"
-                        }}
-                        className="animate-Litecon"
-                    />
                 </Grid>
             </Grid>
-        </Box>
+        </Box >
     );
 };
 

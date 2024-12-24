@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import Home from './page/Home';
 import AboutUs from './page/AboutUs';
 import Dealer from './page/Dealer';
@@ -13,9 +14,16 @@ import Become from './components/Dealer/Become';
 
 const App = () => {
 
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
-      <Header />
+      <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
+        <Header />
+      </motion.div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -26,7 +34,9 @@ const App = () => {
         <Route path="/grazor" element={<Grazor />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
-      <Footer />
+      <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
+        <Footer />
+      </motion.div>
     </>
   );
 };

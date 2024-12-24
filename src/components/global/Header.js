@@ -27,11 +27,10 @@ const Header = () => {
       <Box sx={{ my: 2 }}>
         <Container>
           <Grid container spacing={2} alignItems="center">
-            {/* Logo Section */}
             <Grid item xs={6} sm={3} md={2}>
               <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
                 <Link href="/" color="inherit" underline="none">
-                  <Typography component="img" src={Logo} sx={{ width: { xs: '90%', sm: '100%' }, maxWidth: '150px' }} />
+                  <Typography component="img" src={Logo} sx={{ width: { xs: '90%', sm: '100%' }, maxWidth: '180px' }} />
                 </Link>
               </Box>
             </Grid>
@@ -40,17 +39,14 @@ const Header = () => {
             <Grid item xs={6} sm={9} md={10} sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
               {/* Menu links - Visible on larger screens */}
               <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
-                {/* E-Scooters */}
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', cursor: 'pointer', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' }, }} onMouseEnter={(e) => handleMenuOpen(e, 'eScooters')} >
                   E-Scooters
                 </Typography>
 
-                {/* Dealer */}
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', cursor: 'pointer', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' }, }} onMouseEnter={(e) => handleMenuOpen(e, 'dealer')}>
                   Dealer
                 </Typography>
 
-                {/* Other Links */}
                 <Typography sx={{ mx: 2, fontFamily: '"Nunito", sans-serif', fontSize: { md: '14px', lg: '18px' }, transition: 'color 0.2s ease', '&:hover': { color: '#FB7C00', cursor: 'pointer' } }}>
                   <Link href="/aboutus" color="inherit" underline="none">
                     About Us
@@ -95,6 +91,7 @@ const Header = () => {
             width: '100vw',
             left: 0,
             padding: 0,
+            mt:2
           },
         }}
       >

@@ -50,7 +50,7 @@ const ScooterDetails = () => {
   useEffect(() => {
     countdown(75, setMaxSpeed);
     countdown(75, setMaxRange);
-    countdown(75, setMotorPower);
+    countdown(100, setMotorPower);
   }, []);
 
   return (
